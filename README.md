@@ -10,7 +10,7 @@
 #### 使用
 一键命令(防止插件冲突，删除重复)
 ```yaml
-sed -i '1i src-git lenzo https://github.com/liuxiaobing/openwrt-packages' feeds.conf.default
+sed -i '1i src-git lenzo https://github.com/liuxiaobing/openwrt-packages.git' feeds.conf.default
 sed -i '2i src-git small https://github.com/liuxiaobing/small.git' feeds.conf.default
 ./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,sing*,smartdns} feeds/packages/utils/v2dat feeds/packages/lang/golang
